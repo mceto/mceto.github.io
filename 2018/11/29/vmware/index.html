@@ -112,17 +112,23 @@
 
 
 
-  <meta name="description" content="记录学习之路上的点点滴滴">
-<meta name="keywords" content="大数据,java,node,小程序，h5,js,vscode">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mceto">
-<meta property="og:url" content="http://yoursite.com/archives/2018/11/index.html">
+  <meta name="description" content="VMware虚拟机的三种联网方式 NAT-网络地址转换:默认使用VMnet8 Brigde-桥接:默认使用VMnet0 Host-Only-私有网络共享主机：默认使用VMnet1  NAT虚拟局域网（常用）用我们自己的电脑（宿主机）和VMWare虚拟机组成的局域网 装了VMWare虚拟机之后，进入 控制面板\网络和 Internet\网络连接  右键-&amp;gt;属性-&amp;gt;双击Internet协议">
+<meta name="keywords" content="VMware">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vmware三种联网方式">
+<meta property="og:url" content="http://yoursite.com/2018/11/29/vmware/index.html">
 <meta property="og:site_name" content="mceto">
-<meta property="og:description" content="记录学习之路上的点点滴滴">
+<meta property="og:description" content="VMware虚拟机的三种联网方式 NAT-网络地址转换:默认使用VMnet8 Brigde-桥接:默认使用VMnet0 Host-Only-私有网络共享主机：默认使用VMnet1  NAT虚拟局域网（常用）用我们自己的电脑（宿主机）和VMWare虚拟机组成的局域网 装了VMWare虚拟机之后，进入 控制面板\网络和 Internet\网络连接  右键-&amp;gt;属性-&amp;gt;双击Internet协议">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/myimg/VMnet8-1.png">
+<meta property="og:image" content="http://yoursite.com/myimg/VMnet8-2.png">
+<meta property="og:image" content="http://yoursite.com/myimg/vmware.png">
+<meta property="og:image" content="http://yoursite.com/myimg/ipconfig.png">
+<meta property="og:updated_time" content="2018-11-29T00:56:37.043Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mceto">
-<meta name="twitter:description" content="记录学习之路上的点点滴滴">
+<meta name="twitter:title" content="vmware三种联网方式">
+<meta name="twitter:description" content="VMware虚拟机的三种联网方式 NAT-网络地址转换:默认使用VMnet8 Brigde-桥接:默认使用VMnet0 Host-Only-私有网络共享主机：默认使用VMnet1  NAT虚拟局域网（常用）用我们自己的电脑（宿主机）和VMWare虚拟机组成的局域网 装了VMWare虚拟机之后，进入 控制面板\网络和 Internet\网络连接  右键-&amp;gt;属性-&amp;gt;双击Internet协议">
+<meta name="twitter:image" content="http://yoursite.com/myimg/VMnet8-1.png">
 
 
 
@@ -131,7 +137,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/11/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/29/vmware/">
 
 
 
@@ -141,7 +147,7 @@
   };
 </script>
 
-  <title>归档 | mceto</title>
+  <title>vmware三种联网方式 | mceto</title>
   
 
 
@@ -190,7 +196,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -294,7 +300,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -336,174 +342,272 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/29/vmware/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="mceto">
+      <meta itemprop="description" content="记录学习之路上的点点滴滴">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="mceto">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">vmware三种联网方式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-29 08:30:08 / 修改时间：08:56:37" itemprop="dateCreated datePublished" datetime="2018-11-29T08:30:08+08:00">2018-11-29</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/VMware/" itemprop="url" rel="index"><span itemprop="name">VMware</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/29/vmware/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/11/29/vmware/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-      <span class="archive-page-counter">
+      
+
+      
+        <h4 id="VMware虚拟机的三种联网方式"><a href="#VMware虚拟机的三种联网方式" class="headerlink" title="VMware虚拟机的三种联网方式"></a>VMware虚拟机的三种联网方式</h4><ul>
+<li>NAT-网络地址转换:默认使用VMnet8</li>
+<li>Brigde-桥接:默认使用VMnet0</li>
+<li>Host-Only-私有网络共享主机：默认使用VMnet1</li>
+</ul>
+<h4 id="NAT虚拟局域网（常用）"><a href="#NAT虚拟局域网（常用）" class="headerlink" title="NAT虚拟局域网（常用）"></a>NAT虚拟局域网（常用）</h4><p>用我们自己的电脑（宿主机）和VMWare虚拟机组成的局域网</p>
+<p>装了VMWare虚拟机之后，进入 <strong>控制面板\网络和 Internet\网络连接</strong></p>
+<p><img src="/myimg/VMnet8-1.png" alt="VMnet8"></p>
+<p><strong>右键</strong>-&gt;属性-&gt;双击Internet协议版本4-&gt;确定</p>
+<p><img src="/myimg/VMnet8-2.png" alt="VMnet8"></p>
+<p>虚拟机</p>
+<p><img src="/myimg/vmware.png" alt="vmware"></p>
+<hr>
+<h4 id="桥接虚拟局域网"><a href="#桥接虚拟局域网" class="headerlink" title="桥接虚拟局域网"></a>桥接虚拟局域网</h4><ol>
+<li>使用桥接方式的虚拟机与宿主机的地位是同等的</li>
+<li>宿主机和虚拟机的上网时独立的</li>
+<li>宿主机迁移，虚拟机的网络配置也需要同步修改</li>
+</ol>
+<hr>
+<h4 id="仅主机虚拟局域网"><a href="#仅主机虚拟局域网" class="headerlink" title="仅主机虚拟局域网"></a>仅主机虚拟局域网</h4><p>仅提供宿主机和虚拟机之间的网络访问。宿主机能上网，虚拟机不能上网</p>
+<hr>
+<h4 id="物理局域网"><a href="#物理局域网" class="headerlink" title="物理局域网"></a>物理局域网</h4><ul>
+<li>ip：192.168.25.135        192.168.25.XXX是约定俗成的，XXX为1~255之间</li>
+<li>子网掩码:255.255.255.0    判断ip是否在同一个网段里面</li>
+<li>网关：192.168.25.1        路由器地址</li>
+<li>dns:8.8.8.8          网关地址:域名解析服务器</li>
+</ul>
+<p><img src="/myimg/ipconfig.png" alt="ipconfig"></p>
+<p>局域网的形成条件：</p>
+<ol>
+<li>需要一个路由器/交换机</li>
+<li>正确的配置网络信息</li>
+</ol>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
         
+      </div>
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/VMware/" <i="" class="fa fa-tag"> VMware</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
         
+
+        
+
         
           
-        
-        嗯..! 目前共计 3 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          <div class="social_share">
+            
+            
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
           </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/29/vmware/" itemprop="url">
-              
-                <span itemprop="name">vmware三种联网方式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-29T08:30:08+08:00" content="2018-11-29">
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        </div>
+      
       
 
-        
-        
-        
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/26/hexo/" rel="next" title="如何利用Hexo、GitHub免费搭建属于自己的博客网站">
+                <i class="fa fa-chevron-left"></i> 如何利用Hexo、GitHub免费搭建属于自己的博客网站
+              </a>
+            
+          </div>
 
-        
-        
+          <span class="post-nav-divider"></span>
 
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/26/hexo/" itemprop="url">
-              
-                <span itemprop="name">如何利用Hexo、GitHub免费搭建属于自己的博客网站</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T23:26:26+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/26/hello-world/" itemprop="url">
-              
-                <span itemprop="name">hello world</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T16:30:29+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-    </div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -524,8 +628,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -636,6 +749,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#VMware虚拟机的三种联网方式"><span class="nav-number">1.</span> <span class="nav-text">VMware虚拟机的三种联网方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NAT虚拟局域网（常用）"><span class="nav-number">2.</span> <span class="nav-text">NAT虚拟局域网（常用）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#桥接虚拟局域网"><span class="nav-number">3.</span> <span class="nav-text">桥接虚拟局域网</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#仅主机虚拟局域网"><span class="nav-number">4.</span> <span class="nav-text">仅主机虚拟局域网</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#物理局域网"><span class="nav-number">5.</span> <span class="nav-text">物理局域网</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -777,6 +906,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
