@@ -121,17 +121,20 @@
 
 
 
-  <meta name="description" content="记录学习之路上的点点滴滴">
-<meta name="keywords" content="大数据,java,node,小程序，h5,js,vscode">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mceto">
-<meta property="og:url" content="http://blog.mceto.com/index.html">
+  <meta name="description" content="Hive 📋介绍：基于hadoop的数据仓库工具，通俗讲可以把结构化的文本文件映射成一张数据库表，并提供类SQL查询功能 🧠本质：将SQL转换为MapReduce程序 🚗用途：做离线数据分析">
+<meta name="keywords" content="Big Data,hive">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hive">
+<meta property="og:url" content="http://blog.mceto.com/2018/12/12/hive/index.html">
 <meta property="og:site_name" content="mceto">
-<meta property="og:description" content="记录学习之路上的点点滴滴">
+<meta property="og:description" content="Hive 📋介绍：基于hadoop的数据仓库工具，通俗讲可以把结构化的文本文件映射成一张数据库表，并提供类SQL查询功能 🧠本质：将SQL转换为MapReduce程序 🚗用途：做离线数据分析">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/mceto/blog/master/banner/banner20181216.png">
+<meta property="og:updated_time" content="2018-12-22T12:34:48.773Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mceto">
-<meta name="twitter:description" content="记录学习之路上的点点滴滴">
+<meta name="twitter:title" content="hive">
+<meta name="twitter:description" content="Hive 📋介绍：基于hadoop的数据仓库工具，通俗讲可以把结构化的文本文件映射成一张数据库表，并提供类SQL查询功能 🧠本质：将SQL转换为MapReduce程序 🚗用途：做离线数据分析">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/mceto/blog/master/banner/banner20181216.png">
 
 
 
@@ -140,7 +143,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.mceto.com/">
+  <link rel="canonical" href="http://blog.mceto.com/2018/12/12/hive/">
 
 
 
@@ -150,7 +153,7 @@
   };
 </script>
 
-  <title>mceto</title>
+  <title>hive | mceto</title>
   
 
 
@@ -199,8 +202,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -236,7 +238,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -378,190 +380,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.mceto.com/2018/12/22/hexoclient/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mceto">
-      <meta itemprop="description" content="记录学习之路上的点点滴滴">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mceto">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/22/hexoclient/" class="post-title-link" itemprop="http://blog.mceto.com/index.html">HexoClient</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-12-22 20:33:57 / 修改时间：20:54:34" itemprop="dateCreated datePublished" datetime="2018-12-22T20:33:57+08:00">2018-12-22</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/word/" itemprop="url" rel="index"><span itemprop="name">word</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/12/22/hexoclient/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/12/22/hexoclient/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="https://raw.githubusercontent.com/mceto/blog/master/banner/banner20181222.png" alt=""></p>
-<p>添加了一个分类：word,做一个关键词分享。</p>
-<p>本地整理了很多，大多数都是从别处摘抄的。。。就添加这个分类，根据一个关键词，记一些日常生活中比较实用的东西。</p>
-<p>以后有原创的东西会第一时间发布在自己的博客上。<br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/12/22/hexoclient/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-         
-          <!--/noindex-->
-        
-      
-    </p></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -593,10 +414,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/12/12/hive/" class="post-title-link" itemprop="http://blog.mceto.com/index.html">hive</a>
+          <h1 class="post-title" itemprop="name headline">hive
               
             
           </h1>
@@ -699,23 +517,85 @@
       
 
       
-        
-          <p><img src="https://raw.githubusercontent.com/mceto/blog/master/banner/banner20181216.png" alt=""></p>
+        <p><img src="https://raw.githubusercontent.com/mceto/blog/master/banner/banner20181216.png" alt=""></p>
 <h2 id="Hive"><a href="#Hive" class="headerlink" title="Hive"></a>Hive</h2><ul>
 <li>📋介绍：基于hadoop的数据仓库工具，通俗讲可以把结构化的文本文件映射成一张数据库表，并提供类SQL查询功能</li>
 <li>🧠本质：将SQL转换为MapReduce程序</li>
 <li>🚗用途：做离线数据分析</li>
 </ul>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/12/12/hive/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-         
-          <!--/noindex-->
-        
+<a id="more"></a>
+<h2 id="Hive-SQL"><a href="#Hive-SQL" class="headerlink" title="Hive SQL"></a>Hive SQL</h2><blockquote>
+<p>推荐数据库连接工具：<a href="https://dbeaver.io/download/" target="_blank" rel="noopener">DBeaver</a>,可以连接hadoop的hive数据库及各种数据库<br>推荐书籍：《离线和实时大数据开发实战》 –朱松岭</p>
+</blockquote>
+<h3 id="Hive数据库"><a href="#Hive数据库" class="headerlink" title="Hive数据库"></a>Hive数据库</h3><h4 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--语法</span></span><br><span class="line"><span class="keyword">CREATE</span> (<span class="keyword">DATABASE</span>|<span class="keyword">SCHEMA</span>) [ <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> ] database_name</span><br><span class="line">	[ <span class="keyword">COMMENT</span> database_name ]</span><br><span class="line">	[ LOCATION hdfs_path ]</span><br><span class="line">	[ <span class="keyword">WITH</span> DBPROPERTIES (Property_name=property <span class="keyword">value</span> , ...) ];</span><br><span class="line"></span><br><span class="line">ex: <span class="keyword">create</span> <span class="keyword">database</span> demo;</span><br></pre></td></tr></table></figure>
+<h4 id="显示所有数据库"><a href="#显示所有数据库" class="headerlink" title="显示所有数据库"></a>显示所有数据库</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">databases</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> demo;</span><br></pre></td></tr></table></figure>
+<h1 id="hive默认不允许删除含有表的数据库，若数据库中有表，则使用以下语句删数据库"><a href="#hive默认不允许删除含有表的数据库，若数据库中有表，则使用以下语句删数据库" class="headerlink" title="hive默认不允许删除含有表的数据库，若数据库中有表，则使用以下语句删数据库"></a>hive默认不允许删除含有表的数据库，若数据库中有表，则使用以下语句删数据库</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> demo <span class="keyword">CASCADE</span></span><br></pre></td></tr></table></figure>
+<h4 id="切换数据库"><a href="#切换数据库" class="headerlink" title="切换数据库"></a>切换数据库</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> demo;</span><br></pre></td></tr></table></figure>
+<h4 id="查看数据库信息"><a href="#查看数据库信息" class="headerlink" title="查看数据库信息"></a>查看数据库信息</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">discribe database demo;</span><br></pre></td></tr></table></figure>
+<h3 id="Hive表DDL"><a href="#Hive表DDL" class="headerlink" title="Hive表DDL"></a>Hive表DDL</h3><h4 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">EXTERNAL</span>] <span class="keyword">TABLE</span> [<span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span>] table_name  </span><br><span class="line">   [(col_name data_type [<span class="keyword">COMMENT</span> col_comment], ...)] <span class="comment">--字段名,类型</span></span><br><span class="line">   [<span class="keyword">COMMENT</span> table_comment]  <span class="comment">--字段描述</span></span><br><span class="line">   [PARTITIONED <span class="keyword">BY</span> (col_name data_type [<span class="keyword">COMMENT</span> col_comment], ...)]  <span class="comment">--分区，数据查询的时候速度更快</span></span><br><span class="line">   [CLUSTERED <span class="keyword">BY</span> (col_name, col_name, ...) [SORTED <span class="keyword">BY</span> (col_name [<span class="keyword">ASC</span>|<span class="keyword">DESC</span>], ...)] <span class="keyword">INTO</span> num_buckets BUCKETS]  <span class="comment">--分桶,根据字段哈希取余数决定放在哪个桶中</span></span><br><span class="line">   [<span class="keyword">ROW</span> <span class="keyword">FORMAT</span> row_format] <span class="comment">--分割符	</span></span><br><span class="line">   [<span class="keyword">STORED</span> <span class="keyword">AS</span> file_format] <span class="comment">--字段排序</span></span><br><span class="line">   [LOCATION hdfs_path] <span class="comment">--HDFS地址</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>创建指定分隔符的内表(默认’\001’)</p>
+<ul>
+<li>单一类型的表<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> demo (<span class="keyword">id</span> <span class="built_in">int</span>, <span class="keyword">name</span> <span class="keyword">string</span> ) <span class="keyword">row</span> <span class="keyword">format</span> <span class="keyword">delimited</span> <span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'||'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>表数据类型为：<br><code>66||jerry</code><br><code>77||tomas</code></p>
+<ul>
+<li>复杂类型的表1<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> demo (<span class="keyword">name</span> <span class="keyword">string</span>, hobby <span class="built_in">array</span>&lt;<span class="keyword">string</span>&gt; ) </span><br><span class="line">	<span class="keyword">row</span> <span class="keyword">format</span> <span class="keyword">delimited</span> <span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'\t'</span> </span><br><span class="line">	collection items <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'||'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>表数据类型为:<br>​    <code>jerry    movie||game||music</code><br>​    <code>tomas    movie||code||basketball</code></p>
+<ul>
+<li>复杂类型的表2<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> demo (<span class="keyword">id</span> <span class="built_in">int</span>, <span class="keyword">name</span> <span class="keyword">string</span>, hobby_score <span class="keyword">map</span>&lt;<span class="keyword">string</span>, <span class="built_in">int</span>&gt;) </span><br><span class="line">	<span class="keyword">row</span> <span class="keyword">format</span> <span class="keyword">delimited</span> <span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'\t'</span></span><br><span class="line">	collection items <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'||'</span></span><br><span class="line">	<span class="keyword">map</span> <span class="keyword">keys</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">':'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>表数据类型为：<br>​    <code>66    jerry    movie:5||game:5||music:4</code><br>​    <code>77    tomas    movie:4||game:5||basketball:3</code></p>
+<h4 id="创建外表"><a href="#创建外表" class="headerlink" title="创建外表"></a>创建外表</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">external</span> <span class="keyword">table</span> demo_ext(<span class="keyword">id</span> <span class="built_in">int</span>, <span class="keyword">name</span> <span class="keyword">string</span>, hobby <span class="keyword">string</span>) <span class="keyword">row</span> <span class="keyword">format</span> <span class="keyword">delimited</span> <span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'||'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="复制表-复制表结构，不复制数据"><a href="#复制表-复制表结构，不复制数据" class="headerlink" title="复制表(复制表结构，不复制数据)"></a>复制表(复制表结构，不复制数据)</h4>  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> demo_copy <span class="keyword">like</span> demo;</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<h4 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h4><ul>
+<li><p>修改表名</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> demo_old <span class="keyword">rename</span> <span class="keyword">to</span> demo_new;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改表列名</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> demo <span class="keyword">change</span> old_col new_col;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加列名</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> demo <span class="keyword">add</span> <span class="keyword">columns</span> (newcol <span class="built_in">int</span> <span class="keyword">comment</span> <span class="string">'这是新列的描述'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="删除表"><a href="#删除表" class="headerlink" title="删除表"></a>删除表</h4><ul>
+<li><p>删除表的数据和元数据</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> demo;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>只删除表数据</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">truncate</span> <span class="keyword">table</span> demo;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="插入表数据"><a href="#插入表数据" class="headerlink" title="插入表数据"></a>插入表数据</h4><ul>
+<li><p>向表中加载数据</p>
+<blockquote>
+<p>数据库：hive</p>
+<blockquote>
+<p>本地日志文件路径：/usr/local/openresty/nginx/logs/toupload/user_defined.log.2018*<br>HDFS路径：hdfs://user/hive/warehouse/hive.db/</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; --LOAD语法</span><br><span class="line">&gt; LOAD DATA </span><br><span class="line">&gt; [LOCAL]  -- 若为本地路径加local,hdfs路径不加</span><br><span class="line">&gt; INPATH 'filepath' --文件路径</span><br><span class="line">&gt; [OVERWRITE] --是否覆盖</span><br><span class="line">&gt; INTO TABLE tablename [PARTITION(col=value,col_1=value_1...)]</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; --在hive数据库中中创建自定义分区ymd的表</span><br><span class="line">&gt; create table userlog (msec string,remote_addr string,status int,body_bytes_sent string,u_domain string,u_url string,u_title string,u_referrer string,u_sh string,u_sw string,u_cd string,u_lang string,http_user_agent string,u_account string,u_avalue string,u_type0 string,u_type1 string,u_type2 string) </span><br><span class="line">&gt; partitioned by (ymd string) </span><br><span class="line">&gt; row format delimited fields terminated by '||';</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ul>
+<p>–装载某一天的数据<br>load data local inpath ‘/usr/local/openresty/nginx/logs/toupload/user_defined.log.20181209*’ into table userlog partition (ymd=’20181209’);<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; 若日志文件已经映射到HDFS上</span><br><span class="line">&gt; HDFS日志路径:hdfs://flume/tailout/18-12-09/</span><br><span class="line">```SQL</span><br><span class="line">load data inpath &apos;/flume/tailout/18-12-09/*&apos; into table userlog partition (ymd=&apos;20181209&apos;);</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>将查询结果插入到Hive表中(HDFS文件系统)<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--insert语法</span></span><br><span class="line"><span class="keyword">INSERT</span> </span><br><span class="line">[<span class="keyword">INTO</span>:OVERWRITE]  <span class="comment">--into:追加插入到表中。overwrite:覆盖表数据</span></span><br><span class="line"><span class="keyword">TABLE</span> demo</span><br><span class="line">select_statement...</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--创建结果表</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> userlogresult(timesec <span class="keyword">string</span>,ip <span class="keyword">string</span>) </span><br><span class="line">partitioned <span class="keyword">by</span> (ymd <span class="keyword">string</span>) </span><br><span class="line"><span class="keyword">row</span> <span class="keyword">format</span> <span class="keyword">delimited</span> <span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'||'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--开启动态分区</span></span><br><span class="line"><span class="keyword">set</span> hive.exec.dynamic.partition=<span class="literal">true</span>;</span><br><span class="line"><span class="keyword">set</span> hive.exec.dynamic.partition.mode=nonstrict;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 将userlog表查询的结果插入到userlogresult表中</span></span><br><span class="line"><span class="keyword">insert</span> overwrite <span class="keyword">table</span> userlogresult <span class="keyword">partition</span> (ymd)</span><br><span class="line"><span class="keyword">select</span> mesec <span class="keyword">as</span> timesec,remote_addr <span class="keyword">as</span> ip,ymd <span class="keyword">from</span> userlog;</span><br></pre></td></tr></table></figure>
+<h3 id="Hive表DML"><a href="#Hive表DML" class="headerlink" title="Hive表DML"></a>Hive表DML</h3><p>额…众所周知，表查询是最艰难的，下一章再单独做总结吧</p>
+
       
     </div>
 
@@ -726,6 +606,17 @@
     
 
     
+      <div>
+        
+      </div>
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
 
     
 
@@ -738,378 +629,62 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.mceto.com/2018/11/26/hexo/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mceto">
-      <meta itemprop="description" content="记录学习之路上的点点滴滴">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mceto">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/11/26/hexo/" class="post-title-link" itemprop="http://blog.mceto.com/index.html">如何利用Hexo、GitHub免费搭建属于自己的博客网站</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-26 23:26:26" itemprop="dateCreated datePublished" datetime="2018-11-26T23:26:26+08:00">2018-11-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-12-01 01:47:46" itemprop="dateModified" datetime="2018-12-01T01:47:46+08:00">2018-12-01</time>
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Big-Data/" <i="" class="fa fa-tag"> Big Data</a>
           
-
+            <a href="/tags/hive/" <i="" class="fa fa-tag"> hive</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/26/hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/11/26/hexo/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="https://raw.githubusercontent.com/mceto/blog/master/banner/banner20181127.png" alt=""></p>
-<p>👉👉👉<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">GitHub</a><br>👉👉👉<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a><br>👉👉👉<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Hexo食用指南</a><br>👉👉👉<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next主题</a><br>👉👉👉<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a><br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/11/26/hexo/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-         
-          <!--/noindex-->
-        
-      
-    </p></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.mceto.com/2018/11/26/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mceto">
-      <meta itemprop="description" content="记录学习之路上的点点滴滴">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mceto">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/11/26/hello-world/" class="post-title-link" itemprop="http://blog.mceto.com/index.html">hello world</a>
-              
-            
-          </h1>
+        <div class="post-widgets">
         
 
-        <div class="post-meta">
-          <span class="post-time">
+        
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-26 16:30:29" itemprop="dateCreated datePublished" datetime="2018-11-26T16:30:29+08:00">2018-11-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-12-01 00:41:08" itemprop="dateModified" datetime="2018-12-01T00:41:08+08:00">2018-12-01</time>
-              
-            
-          </span>
-
+        
           
-
-          
+          <div class="social_share">
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/11/26/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/11/26/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+               <div id="needsharebutton-postbottom">
+                 <span class="btn">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                 </span>
+               </div>
+            
+          </div>
+        
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
-        
-          <p><img src="https://raw.githubusercontent.com/mceto/blog/master/banner/banner20181126.png" alt=""></p>
-<p>​    第一次写博客，标题也不知道该取什么名字，作为一个从事计算机行业的人，先国际惯例吧。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/11/26/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/26/hexo/" rel="next" title="如何利用Hexo、GitHub免费搭建属于自己的博客网站">
+                <i class="fa fa-chevron-left"></i> 如何利用Hexo、GitHub免费搭建属于自己的博客网站
               </a>
-            </div>
-         
-          <!--/noindex-->
-        
-      
-    </div>
+            
+          </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-    
-    
-
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/22/hexoclient/" rel="prev" title="HexoClient">
+                HexoClient <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1119,14 +694,18 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -1147,8 +726,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -1269,6 +857,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hive"><span class="nav-number">1.</span> <span class="nav-text">Hive</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hive-SQL"><span class="nav-number">2.</span> <span class="nav-text">Hive SQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hive数据库"><span class="nav-number">2.1.</span> <span class="nav-text">Hive数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建数据库"><span class="nav-number">2.1.1.</span> <span class="nav-text">创建数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#显示所有数据库"><span class="nav-number">2.1.2.</span> <span class="nav-text">显示所有数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除数据库"><span class="nav-number">2.1.3.</span> <span class="nav-text">删除数据库</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#hive默认不允许删除含有表的数据库，若数据库中有表，则使用以下语句删数据库"><span class="nav-number"></span> <span class="nav-text">hive默认不允许删除含有表的数据库，若数据库中有表，则使用以下语句删数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#切换数据库"><span class="nav-number">0.0.1.</span> <span class="nav-text">切换数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看数据库信息"><span class="nav-number">0.0.2.</span> <span class="nav-text">查看数据库信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hive表DDL"><span class="nav-number">0.1.</span> <span class="nav-text">Hive表DDL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建表"><span class="nav-number">0.1.1.</span> <span class="nav-text">创建表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建外表"><span class="nav-number">0.1.2.</span> <span class="nav-text">创建外表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制表-复制表结构，不复制数据"><span class="nav-number">0.1.3.</span> <span class="nav-text">复制表(复制表结构，不复制数据)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改表"><span class="nav-number">0.1.4.</span> <span class="nav-text">修改表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除表"><span class="nav-number">0.1.5.</span> <span class="nav-text">删除表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插入表数据"><span class="nav-number">0.1.6.</span> <span class="nav-text">插入表数据</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hive表DML"><span class="nav-number">0.2.</span> <span class="nav-text">Hive表DML</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1410,6 +1014,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
